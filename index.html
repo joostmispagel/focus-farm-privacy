@@ -3,121 +3,387 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Focus Farm – Datenschutz / Privacy</title>
+<title>Study Farm – Rechtliches / Legal</title>
 <style>
   :root { --bg: #fbf8f1; --text: #2b2620; --muted: #6b6257; --accent: #4f8a3c; --card: #ffffff; --line: #e6dfd2; }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #1d1b17; --text: #ece6da; --muted: #a89f92; --accent: #8cc276; --card: #26231e; --line: #3a362f; }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
   h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+  h2 { font-size: 1.4rem; margin: 8px 0 4px; }
+  h3 { font-size: 1.08rem; margin: 24px 0 4px; }
   .muted { color: var(--muted); }
-  nav a { color: var(--accent); margin-right: 16px; font-weight: 600; }
-  section.lang { background: var(--card); border: 1px solid var(--line);
-                 border-radius: 16px; padding: 8px 24px 20px; margin-top: 24px; }
-  a { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 0; }
+  nav a { color: var(--accent); font-weight: 600; }
+  nav .label { color: var(--muted); font-weight: 600; min-width: 64px; }
+  section.doc { background: var(--card); border: 1px solid var(--line);
+                border-radius: 16px; padding: 16px 24px 20px; margin-top: 24px;
+                scroll-margin-top: 16px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .top { display: inline-block; margin-top: 16px; font-size: .9rem; }
 </style>
 </head>
 <body>
-<main>
-  <h1>Focus Farm</h1>
-  <p class="muted">Datenschutzerklärung · Privacy Policy</p>
-  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+<main id="top">
+  <h1>Study Farm</h1>
+  <p class="muted">Datenschutz, Nutzungsbedingungen und Impressum · Privacy, terms and imprint</p>
+  <nav><span class="label">Deutsch</span>
+    <a href="#datenschutz">Datenschutz</a>
+    <a href="#nutzungsbedingungen">Nutzungsbedingungen</a>
+    <a href="#impressum">Impressum</a></nav>
+  <nav><span class="label">English</span>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+    <a href="#imprint">Imprint</a></nav>
 
-  <section class="lang" id="de" lang="de">
+  <!-- ===================================================== DEUTSCH -->
+
+  <section class="doc" id="datenschutz" lang="de">
     <h2>Datenschutzerklärung</h2>
-    <p class="muted">Stand: 14. November 2026</p>
+    <p class="muted">Stand: 17. November 2026</p>
 
-    <h2>Verantwortlicher</h2>
+    <h3>Verantwortlicher</h3>
     <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131, Karlsruhe, Deutschland<br>
     E-Mail: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
 
-    <h2>Kurz gesagt</h2>
-    <p>Focus Farm erhebt keine personenbezogenen Daten. Die App hat keinen
-    Internetzugriff, braucht kein Konto und enthält weder Werbung noch
-    Analyse- oder Tracking-Dienste.</p>
+    <h3>Kurz gesagt</h3>
+    <p>Study Farm braucht kein Konto und enthält weder Werbung noch Analyse-
+    oder Tracking-Dienste. Dein Spielstand bleibt auf deinem Gerät. Nur wenn
+    du Study Farm Pro abonnierst oder dein Abo prüfst, werden die dafür
+    nötigen Daten an Google Play und an unseren Zahlungsdienstleister
+    RevenueCat übertragen.</p>
 
-    <h2>Welche Daten werden gespeichert?</h2>
+    <h3>Daten auf deinem Gerät</h3>
     <p>Dein Spielstand (z. B. deine Farm, Münzen, Erfahrungspunkte, der Name
-    deiner Farm, deine Fokuszeiten und deine Einstellungen) wird
-    ausschließlich lokal auf deinem Gerät gespeichert. Diese Daten werden
-    nicht an mich oder an Dritte übertragen. Wenn du die App deinstallierst
-    oder ihre Daten in den Android-Einstellungen löschst, werden sie
-    vollständig entfernt.</p>
+    deiner Farm, deine Fokuszeiten, Statistiken, Ziele und Einstellungen) wird
+    lokal auf deinem Gerät gespeichert und nicht an mich übertragen. Wenn du
+    die App deinstallierst oder ihre Daten in den Android-Einstellungen
+    löschst, werden diese Daten entfernt.</p>
+    <p>Hast du die Android-Datensicherung aktiviert, kann Android diese Daten
+    in deinem Google-Konto sichern, damit sie auf einem neuen Gerät
+    wiederhergestellt werden können. Das steuerst du in den Einstellungen
+    deines Geräts; die Sicherung erfolgt durch Google, nicht durch mich.</p>
 
-    <h2>Berechtigungen</h2>
-    <p>Die App fordert keine Berechtigungen für Kamera, Mikrofon, Standort,
-    Kontakte oder Dateien an.</p>
+    <h3>Abo „Study Farm Pro“: Google Play</h3>
+    <p>Study Farm Pro wird über Google Play verkauft. Kauf, Zahlung,
+    Verlängerung, Kündigung und Erstattung wickelt Google ab (Google Ireland
+    Ltd. bzw. Google Commerce Ltd., Gordon House, Barrow Street, Dublin 4,
+    Irland). Deine Zahlungsdaten erhalte ich nicht. Es gilt die
+    <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
 
-    <h2>Weitergabe an Dritte</h2>
-    <p>Es werden keine Daten an Dritte weitergegeben. Beim Herunterladen der
-    App über Google Play verarbeitet Google eigenständig Daten gemäß der
-    <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>;
-    darauf habe ich keinen Einfluss.</p>
+    <h3>Abo „Study Farm Pro“: RevenueCat</h3>
+    <p>Um zu prüfen, ob du Study Farm Pro hast, nutzt die App den Dienst
+    RevenueCat (RevenueCat, Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511,
+    USA). Dabei werden verarbeitet:</p>
+    <ul>
+      <li>eine zufällig erzeugte, anonyme Nutzer-ID (kein Name, keine E-Mail-Adresse),</li>
+      <li>dein Kauf- und Abo-Verlauf (z. B. gekauftes Produkt, Preis und Währung,
+      Kauf- und Ablaufdatum, Testzeitraum, Kaufbeleg von Google Play),</li>
+      <li>technische Angaben wie App-Version, Android-Version, Spracheinstellung,
+      Land sowie die IP-Adresse beim Verbindungsaufbau.</li>
+    </ul>
+    <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
+    Abo-Vertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+    einer zuverlässigen Abo-Verwaltung). RevenueCat verarbeitet die Daten in
+    meinem Auftrag auf Grundlage eines Auftragsverarbeitungsvertrags. Da
+    RevenueCat seinen Sitz in den USA hat, können Daten in die USA übertragen
+    werden; dies erfolgt auf Grundlage der EU-Standardvertragsklauseln
+    (Art. 46 DSGVO). Mehr dazu in der
+    <a href="https://www.revenuecat.com/privacy">Datenschutzerklärung von RevenueCat</a>.</p>
+    <p>Wenn du Study Farm Pro nie öffnest oder kaufst, nimmt die App beim Start
+    dennoch kurz Kontakt zu RevenueCat auf, um den Abo-Status abzufragen; dabei
+    werden nur die anonyme Nutzer-ID und die technischen Angaben übertragen.</p>
 
-    <h2>Kinder</h2>
-    <p>Da die App keine personenbezogenen Daten erhebt, werden auch keine
-    Daten von Kindern erhoben.</p>
+    <h3>Speicherdauer</h3>
+    <p>Abo-Daten werden so lange gespeichert, wie sie für die Verwaltung deines
+    Abos und wegen gesetzlicher Aufbewahrungspflichten (z. B. steuerlich, bis
+    zu 10 Jahre) nötig sind. Danach werden sie gelöscht. Du kannst die
+    Löschung jederzeit per E-Mail verlangen, soweit keine Aufbewahrungspflicht
+    entgegensteht.</p>
 
-    <h2>Deine Rechte</h2>
+    <h3>Berechtigungen</h3>
+    <p>Die App nutzt nur den Internetzugriff (für das Abo) und die
+    Google-Play-Abrechnung. Sie fordert keinen Zugriff auf Kamera, Mikrofon,
+    Standort, Kontakte oder Dateien an.</p>
+
+    <h3>Kinder</h3>
+    <p>Die App erhebt keine Daten, mit denen sich ein Kind identifizieren
+    ließe. Käufe über Google Play unterliegen den Einstellungen für Familien
+    und Kinder in Google Play.</p>
+
+    <h3>Deine Rechte</h3>
     <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung,
-    Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch
-    sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu
-    beschweren. Da ich keine Daten über dich besitze, kann ich in der Regel
-    keine Auskunft erteilen; bei Fragen kannst du mich aber jederzeit per
-    E-Mail erreichen.</p>
+    Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.
+    Schreib mir dazu einfach eine E-Mail. Da ich nur eine anonyme ID kenne,
+    hilft es, wenn du mir die Bestellnummer aus deiner Google-Play-Quittung
+    nennst (sie beginnt mit „GPA.“). Außerdem hast du das Recht, dich bei
+    einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
 
-    <h2>Änderungen</h2>
-    <p>Sollte sich die App so ändern, dass Daten erhoben werden, wird diese
+    <h3>Änderungen</h3>
+    <p>Ändert sich die App so, dass andere Daten verarbeitet werden, wird diese
     Erklärung vorher angepasst.</p>
+    <a class="top" href="#top">↑ Nach oben</a>
   </section>
 
-  <section class="lang" id="en" lang="en">
-    <h2>Privacy Policy</h2>
-    <p class="muted">Last updated: November 14, 2026</p>
+  <section class="doc" id="nutzungsbedingungen" lang="de">
+    <h2>Nutzungsbedingungen</h2>
+    <p class="muted">Stand: 17. November 2026</p>
 
-    <h2>Who is responsible</h2>
+    <h3>1. Geltungsbereich</h3>
+    <p>Diese Bedingungen gelten für die Nutzung der App Study Farm und des Abos
+    Study Farm Pro. Anbieter ist Joost Mispagel (siehe
+    <a href="#impressum">Impressum</a>).</p>
+
+    <h3>2. Die App</h3>
+    <p>Study Farm ist kostenlos nutzbar. Mit dem optionalen Abo Study Farm Pro
+    werden zusätzliche Funktionen freigeschaltet, zurzeit unter anderem
+    ausführliche Statistiken, Fokus-Routinen, alle Fokus-Klänge und besondere
+    Bäume. Der genaue Umfang wird in der App vor dem Kauf angezeigt.
+    Funktionen können weiterentwickelt, ergänzt oder angepasst werden; der
+    wesentliche Umfang eines laufenden Abos wird dabei nicht verringert.</p>
+
+    <h3>3. Kauf und Preise</h3>
+    <p>Study Farm Pro wird ausschließlich über Google Play verkauft. Für Kauf
+    und Zahlung gelten zusätzlich die
+    <a href="https://play.google.com/about/play-terms/">Nutzungsbedingungen von Google Play</a>.
+    Es gelten die in der App bzw. im Google-Play-Kaufdialog angezeigten Preise
+    einschließlich der jeweils gültigen Steuern.</p>
+
+    <h3>4. Laufzeit, Verlängerung und Testzeitraum</h3>
+    <ul>
+      <li>Das Abo läuft je nach Wahl einen Monat oder ein Jahr.</li>
+      <li>Es verlängert sich automatisch um denselben Zeitraum, wenn du es nicht
+      spätestens 24 Stunden vor Ablauf kündigst. Die Zahlung erfolgt über dein
+      Google-Play-Konto.</li>
+      <li>Wird ein kostenloser Testzeitraum angeboten, geht er nach Ablauf
+      automatisch in ein kostenpflichtiges Abo über, wenn du nicht vorher
+      kündigst.</li>
+    </ul>
+
+    <h3>5. Kündigung</h3>
+    <p>Du kannst jederzeit in Google Play kündigen (Play Store → Profilbild →
+    Zahlungen und Abos → Abos) oder in der App im Profil über „Manage Subscription“. Die
+    Kündigung wird zum Ende des bereits bezahlten Zeitraums wirksam; bis dahin
+    bleibt Pro freigeschaltet. Deinstallieren der App kündigt das Abo
+    nicht.</p>
+
+    <h3>6. Widerruf und Erstattungen</h3>
+    <p>Widerruf und Erstattungen richten sich nach den Regeln von Google Play,
+    da Google der Verkäufer ist. Erstattungen kannst du direkt bei Google
+    beantragen. Gesetzliche Rechte als Verbraucher bleiben unberührt.</p>
+
+    <h3>7. Deine Daten</h3>
+    <p>Dein Spielstand wird auf deinem Gerät gespeichert. Für Verluste durch
+    Deinstallation, Gerätewechsel ohne Sicherung oder Löschen der App-Daten
+    kann ich keine Wiederherstellung anbieten. Dein Abo ist an dein
+    Google-Konto gebunden und kann jederzeit über „Restore purchases“
+    erneut aktiviert werden. Siehe auch die
+    <a href="#datenschutz">Datenschutzerklärung</a>.</p>
+
+    <h3>8. Haftung</h3>
+    <p>Ich hafte unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei
+    Verletzung von Leben, Körper oder Gesundheit sowie nach dem
+    Produkthaftungsgesetz. Bei leichter Fahrlässigkeit hafte ich nur für die
+    Verletzung wesentlicher Vertragspflichten und begrenzt auf den
+    vorhersehbaren, typischen Schaden. Im Übrigen ist die Haftung
+    ausgeschlossen.</p>
+
+    <h3>9. Schlussbestimmungen</h3>
+    <p>Es gilt deutsches Recht. Wenn du Verbraucher bist, bleiben zwingende
+    Verbraucherschutzvorschriften des Landes, in dem du lebst, unberührt.
+    Sollte eine Bestimmung unwirksam sein, bleiben die übrigen wirksam.</p>
+    <a class="top" href="#top">↑ Nach oben</a>
+  </section>
+
+  <section class="doc" id="impressum" lang="de">
+    <h2>Impressum</h2>
+    <p class="muted">Angaben gemäß § 5 DDG</p>
     <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131, Karlsruhe<br>
+    Deutschland</p>
+
+    <h3>Kontakt</h3>
+    <p>E-Mail: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
+
+    <h3>Verbraucherstreitbeilegung</h3>
+    <p>Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
+    vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <a class="top" href="#top">↑ Nach oben</a>
+  </section>
+
+  <!-- ===================================================== ENGLISH -->
+
+  <section class="doc" id="privacy" lang="en">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Last updated: November 17, 2026</p>
+
+    <h3>Who is responsible</h3>
+    <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131, Karlsruhe, Germany<br>
     Email: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
 
-    <h2>In short</h2>
-    <p>Focus Farm does not collect any personal data. The app has no internet
-    access, needs no account, and contains no ads, analytics or tracking.</p>
+    <h3>In short</h3>
+    <p>Study Farm needs no account and contains no ads, analytics or tracking.
+    Your progress stays on your device. Only when you subscribe to Study Farm
+    Pro, or the app checks your subscription, is the data needed for that
+    sent to Google Play and to our payment service RevenueCat.</p>
 
-    <h2>What data is stored?</h2>
-    <p>Your game progress (such as your farm, coins, experience points, your
-    farm's name, your focus times and your settings) is stored only on your
-    device. It is never sent to me or to anyone else. Uninstalling the app,
-    or clearing its data in Android's settings, removes it completely.</p>
+    <h3>Data on your device</h3>
+    <p>Your progress (such as your farm, coins, experience points, your farm's
+    name, focus times, stats, goals and settings) is stored on your device and
+    never sent to me. Uninstalling the app, or clearing its data in Android's
+    settings, removes it.</p>
+    <p>If Android backup is turned on, Android may back this data up to your
+    Google account so it can be restored on a new phone. You control this in
+    your device settings; the backup is done by Google, not by me.</p>
 
-    <h2>Permissions</h2>
-    <p>The app does not request access to your camera, microphone, location,
+    <h3>Study Farm Pro: Google Play</h3>
+    <p>Study Farm Pro is sold through Google Play. Google handles purchase,
+    payment, renewal, cancellation and refunds (Google Ireland Ltd. / Google
+    Commerce Ltd., Gordon House, Barrow Street, Dublin 4, Ireland). I never
+    receive your payment details. The
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a> applies.</p>
+
+    <h3>Study Farm Pro: RevenueCat</h3>
+    <p>To check whether you have Study Farm Pro, the app uses RevenueCat
+    (RevenueCat, Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA). This
+    involves:</p>
+    <ul>
+      <li>a random, anonymous user ID (no name, no email address),</li>
+      <li>your purchase and subscription history (such as the product, price and
+      currency, purchase and expiry dates, trial, and the Google Play receipt),</li>
+      <li>technical details such as app version, Android version, language,
+      country, and your IP address when connecting.</li>
+    </ul>
+    <p>The legal basis is Art. 6(1)(b) GDPR (performing the subscription
+    contract) and Art. 6(1)(f) GDPR (legitimate interest in reliable
+    subscription management). RevenueCat processes this data on my behalf
+    under a data processing agreement. As RevenueCat is based in the USA, data
+    may be transferred there on the basis of the EU Standard Contractual
+    Clauses (Art. 46 GDPR). See the
+    <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
+    <p>Even if you never open or buy Study Farm Pro, the app briefly contacts
+    RevenueCat at start-up to check your subscription status; only the
+    anonymous ID and the technical details are sent then.</p>
+
+    <h3>How long data is kept</h3>
+    <p>Subscription data is kept as long as needed to manage your subscription
+    and to meet legal retention duties (e.g. tax records, up to 10 years), and
+    deleted afterwards. You can ask for deletion by email at any time unless a
+    retention duty applies.</p>
+
+    <h3>Permissions</h3>
+    <p>The app only uses internet access (for the subscription) and Google Play
+    billing. It does not request access to your camera, microphone, location,
     contacts or files.</p>
 
-    <h2>Third parties</h2>
-    <p>No data is shared with third parties. When you download the app from
-    Google Play, Google processes data on its own terms under the
-    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
-    which I have no control over.</p>
+    <h3>Children</h3>
+    <p>The app collects no data that could identify a child. Purchases through
+    Google Play are subject to Google Play's family and parental settings.</p>
 
-    <h2>Children</h2>
-    <p>Since the app collects no personal data, it collects none from
-    children either.</p>
-
-    <h2>Your rights</h2>
+    <h3>Your rights</h3>
     <p>Under the GDPR you have the right to access, rectification, erasure,
-    restriction of processing, data portability and objection, and the right
-    to lodge a complaint with a data protection authority. As I hold no data
-    about you, there is usually nothing to disclose, but you can contact me
-    by email with any questions.</p>
+    restriction of processing, data portability and objection. Just email me.
+    As I only know an anonymous ID, it helps to include the order number from
+    your Google Play receipt (it starts with “GPA.”). You also have the right to
+    lodge a complaint with a data protection authority.</p>
 
-    <h2>Changes</h2>
-    <p>If the app ever changes so that it collects data, this policy will be
+    <h3>Changes</h3>
+    <p>If the app changes so that it processes other data, this policy will be
     updated first.</p>
+    <a class="top" href="#top">↑ Back to top</a>
+  </section>
+
+  <section class="doc" id="terms" lang="en">
+    <h2>Terms of Use</h2>
+    <p class="muted">Last updated: November 17, 2026</p>
+
+    <h3>1. Scope</h3>
+    <p>These terms apply to the Study Farm app and the Study Farm Pro
+    subscription, provided by Joost Mispagel (see <a href="#imprint">Imprint</a>).</p>
+
+    <h3>2. The app</h3>
+    <p>Study Farm is free to use. The optional Study Farm Pro subscription
+    unlocks extra features, currently including detailed stats, focus
+    routines, all focus sounds and special trees. The exact features are shown
+    in the app before you buy. Features may be improved, added or changed;
+    the essential scope of an active subscription will not be reduced.</p>
+
+    <h3>3. Purchase and prices</h3>
+    <p>Study Farm Pro is sold only through Google Play, and the
+    <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a>
+    also apply to purchase and payment. The price is the one shown in the app
+    and in Google Play's purchase dialog, including applicable taxes.</p>
+
+    <h3>4. Term, renewal and free trial</h3>
+    <ul>
+      <li>The subscription runs for one month or one year, as you choose.</li>
+      <li>It renews automatically for the same period unless you cancel at
+      least 24 hours before it ends. Payment is charged to your Google Play
+      account.</li>
+      <li>If a free trial is offered, it turns into a paid subscription when it
+      ends unless you cancel before then.</li>
+    </ul>
+
+    <h3>5. Cancelling</h3>
+    <p>You can cancel any time in Google Play (Play Store → profile picture →
+    Payments &amp; subscriptions → Subscriptions) or in the app under Profile → “Manage
+    Subscription”. Cancelling takes effect at the end of the period you have
+    paid for; Pro stays unlocked until then. Uninstalling the app does not
+    cancel the subscription.</p>
+
+    <h3>6. Withdrawal and refunds</h3>
+    <p>Withdrawal and refunds follow Google Play's rules, as Google is the
+    seller. You can request a refund directly from Google. Your statutory
+    consumer rights are not affected.</p>
+
+    <h3>7. Your data</h3>
+    <p>Your progress is stored on your device. I cannot restore progress lost
+    by uninstalling, switching phones without a backup, or clearing the app's
+    data. Your subscription belongs to your Google account and can be
+    re-activated at any time with “Restore purchases”. See also the
+    <a href="#privacy">Privacy Policy</a>.</p>
+
+    <h3>8. Liability</h3>
+    <p>I am liable without limitation for intent and gross negligence, for
+    injury to life, body or health, and under the German Product Liability
+    Act. For slight negligence I am liable only for breach of essential
+    contractual obligations, limited to the foreseeable, typical damage.
+    Otherwise liability is excluded.</p>
+
+    <h3>9. Final provisions</h3>
+    <p>German law applies. If you are a consumer, mandatory consumer
+    protection laws of the country where you live remain unaffected. If any
+    provision is invalid, the rest remain valid.</p>
+    <a class="top" href="#top">↑ Back to top</a>
+  </section>
+
+  <section class="doc" id="imprint" lang="en">
+    <h2>Imprint</h2>
+    <p class="muted">Information under § 5 DDG (German Digital Services Act)</p>
+    <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131, Kalrsruhe<br>
+    Germany</p>
+
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
+
+    <h3>Consumer dispute resolution</h3>
+    <p>I am neither willing nor obliged to take part in dispute resolution
+    proceedings before a consumer arbitration board.</p>
+    <a class="top" href="#top">↑ Back to top</a>
   </section>
 </main>
 </body>
